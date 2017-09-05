@@ -2,12 +2,12 @@
 
 var price = 10;
 
-
+//pice function
 function priceTotal () {
   $('strong').html(price);
 }
 
-//removes initial button press at load
+//removes initial button 'pressed' appearance at load
 $(document).ready(function () {
   $('.btn').removeClass("active");
 });
@@ -19,7 +19,7 @@ $(document).ready(function () {
     $('.pep').toggle();
       $('.pep-price').toggle();
         priceTotal();
-    });
+      });
   });
   $('.btn-mushrooms').click(function () {
     price += 1;
